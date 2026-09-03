@@ -21,8 +21,6 @@
         margin: 0;
         transition: transform var(--velocidade) ease-in-out, opacity var(--velocidade) ease-in-out;
         zoom: 0.9;
-        transform: scale(0.9);
-        transform-origin: top center;
     }
 
     header {
