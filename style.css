@@ -20,6 +20,9 @@
         color: rgb(251, 239, 148);
         margin: 0;
         transition: transform var(--velocidade) ease-in-out, opacity var(--velocidade) ease-in-out;
+        zoom: 0.9;
+        transform: scale(0.9);
+        transform-origin: top center;
     }
 
     header {
@@ -216,14 +219,14 @@
         text-align: center;
         text-decoration: none;
         transition: transform 0.3s ease;
-    
+
         display: inline-block;
     }
 
     .opcao-item:hover {
         transform: scale(1.1);
     }
-  
+
     .opcao-item img {
         width: 100%;
         height: auto;
