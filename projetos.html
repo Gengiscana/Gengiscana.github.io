@@ -61,6 +61,29 @@
             </div>
         </div>
     </a>
+    <div id="loader-overlay" class="loader-overlay">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+    </div>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const destino = link.getAttribute('href');
+
+                document.getElementById('loader-overlay').classList.add('ativo');
+
+                setTimeout(() => {
+                    window.location.href = destino;
+                }, 1200);
+            });
+        });
+    </script>
 </body>
 
 </html>
